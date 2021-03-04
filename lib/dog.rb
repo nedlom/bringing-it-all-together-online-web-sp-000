@@ -69,7 +69,7 @@ class Dog
       SQL
       
     dog = DB[:conn].execute(sql, name, breed)[0]
-    binding.pry
+    # binding.pry
     if !dog
       self.create(name, breed)
     end
