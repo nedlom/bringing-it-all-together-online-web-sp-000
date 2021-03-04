@@ -73,5 +73,10 @@ class Dog
       self.create(name, breed)
     end
     
+    def update
+      sql = <<-SQL
+        
+    end
+    
   end
 end
