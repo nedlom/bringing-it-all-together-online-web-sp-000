@@ -73,6 +73,8 @@ class Dog
       self.create(name, breed)
     end
     
+    def self.find_by_name
+    
     def update
       sql = <<-SQL
         UPDATE dogs 
