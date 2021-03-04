@@ -72,6 +72,8 @@ class Dog
     # binding.pry
     if !dog
       self.create(name, breed)
+    else
+      self.new_from_db(dog)
     end
   end
     
