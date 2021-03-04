@@ -68,7 +68,7 @@ class Dog
       WHERE name = ? AND breed = ?
       SQL
       
-    dog = DB[:conn].execute(sql, name, breed)
+    dog = DB[:conn].execute(sql, name, breed)[0]
     binding.pry
     if !dog
       self.create(name, breed)
